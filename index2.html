@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: Arial, sans-serif;
+  height: 100%;
+  background-color: pink;
+}
+
+.container {
+  padding: 20px;
+  text-align: center;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+.subjects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.subject-card {
+  background-color: aquamarine;
+  border: 2px solid purple;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.subject-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.subject-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Hiệu ứng hover */
+.subject-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border-color: #3498db;
+}
+
+.subject-card:hover h3 {
+  color: #3498db;
+}
+
+/* Media query cho màn hình nhỏ */
+@media (max-width: 768px) {
+  .subjects {
+    grid-template-columns: repeat(2, 1fr); /* 2 cột khi màn hình nhỏ */
+  }
+}
+
+@media (max-width: 480px) {
+  .subjects {
+    grid-template-columns: 1fr; /* 1 cột khi màn hình rất nhỏ */
+  }
+}
+    </style>
+</head>
+<body>
+    <body>
+        <div class="container">
+          <h2>Danh sách môn học yêu thích</h2>
+          <div class="subjects">
+            <div class="subject-card">
+              <h3>Toán cao cấp</h3>
+              <p>Môn học giúp tôi phát triển khả năng tư duy logic và giải quyết vấn đề.</p>
+            </div>
+            <div class="subject-card">
+              <h3>Kỹ thuật lập trình</h3>
+              <p>Tôi đam mê lập trình và thích khám phá các ngôn ngữ và công nghệ mới.</p>
+            </div>
+            <div class="subject-card">
+              <h3>Hệ thống máy tính</h3>
+              <p>Môn học này giúp tôi hiểu sâu hơn về cấu trúc dữ liệu và thuật toán.</p>
+            </div>
+            <div class="subject-card">
+              <h3>Hệ thống & Công nghệ web</h3>
+              <p>Tôi yêu thích sự sáng tạo và nghệ thuật trong thiết kế trang web.</p>
+            </div>
+            <div class="subject-card">
+              <h3>Kinh tế chính trị Mác - Lênin</h3>
+              <p>Môn học giúp tôi hiểu rõ hơn về kinh tế & chính trị trong đời sống</p>
+            </div>
+            <div class="subject-card">
+              <h3>Vật lý đại cương</h3>
+              <p>Môn học này giúp tôi hiểu rõ hơn về các nguyên lý vật lý và cách chúng tác động đến cuộc sống.</p>
+            </div>
+          </div>
+        </div>
+      </body>      
+</body>
+</html>
