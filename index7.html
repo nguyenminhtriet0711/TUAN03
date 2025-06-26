@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: aqua;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Tablet: 2 cột */
+@media (max-width: 992px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile: 1 cột */
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+    </style>
+</head>
+<body>
+    <body>
+        <div class="container">
+          <h2>Thư Viện Ảnh</h2>
+          <div class="gallery">
+            <img src="https://c.pxhere.com/photos/9e/9b/mountain_lake_night_star_starry_sky-107136.jpg!d" alt="Ảnh 1">
+            <img src="https://c.pxhere.com/photos/7c/42/paris_eiffeil_tower_sky_black_and_white_dramatic_france-1414128.jpg!d" alt="Ảnh 2">
+            <img src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2022/11/30/1122262/Cats.jpg" alt="Ảnh 3">
+            <img src="https://kenh14cdn.com/203336854389633024/2022/10/3/photo-20-16648123775631494331657.jpg" alt="Ảnh 4">
+            <img src="https://cizucu-production.imgix.net/images/photos/u2TJCK46xsZr5O6SzU1K.jpg?fm=jpg&w=1200" alt="Ảnh 5">
+            <img src="https://png.pngtree.com/background/20240101/original/pngtree-scenic-view-of-a-vietnamese-village-and-rice-fields-nestled-in-picture-image_7058498.jpg" alt="Ảnh 6">
+          </div>
+        </div>
+      </body>      
+</body>
+</html>
