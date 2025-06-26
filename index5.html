@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.navbar {
+  background-color: #3498db;
+  padding: 10px 0;
+  border-radius: 8px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: pink;
+}
+
+.menu li::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #f1c40f;
+  transition: width 0.3s ease;
+}
+
+.menu li:hover::after {
+  width: 100%;
+}
+    </style>
+</head>
+<body>
+    <body>
+        <div class="container">
+          <nav class="navbar">
+            <ul class="menu">
+              <li><a href="#">Trang Chủ</a></li>
+              <li><a href="#">Giới Thiệu</a></li>
+              <li><a href="#">Dịch Vụ</a></li>
+              <li><a href="#">Liên Hệ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </body>      
+</body>
+</html>
