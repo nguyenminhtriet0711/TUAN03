@@ -51,8 +51,6 @@ h2 {
   font-size: 1rem;
   color: #555;
 }
-
-/* Hiệu ứng hover */
 .subject-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
@@ -62,17 +60,15 @@ h2 {
 .subject-card:hover h3 {
   color: #3498db;
 }
-
-/* Media query cho màn hình nhỏ */
 @media (max-width: 768px) {
   .subjects {
-    grid-template-columns: repeat(2, 1fr); /* 2 cột khi màn hình nhỏ */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
 @media (max-width: 480px) {
   .subjects {
-    grid-template-columns: 1fr; /* 1 cột khi màn hình rất nhỏ */
+    grid-template-columns: 1fr; 
   }
 }
     </style>

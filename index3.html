@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f2f2;
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .schedule-table {
+      display: grid;
+      grid-template-rows: auto;
+      row-gap: 10px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .schedule-row {
+      display: grid;
+      grid-template-columns: 120px repeat(5, 1fr); /* 1 cột thời gian + 5 cột ngày học */
+      gap: 10px;
+      align-items: center;
+    }
+
+    .header {
+      font-weight: bold;
+      background-color: #007acc;
+      color: white;
+      padding: 10px;
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    .cell {
+      background-color: #e6f0ff;
+      padding: 10px;
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    .time-cell {
+      background-color: #d9d9d9;
+      font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <h1>Thời Khoá Biểu</h1>
+
+  <div class="schedule-table">
+    <!-- Header row -->
+    <div class="schedule-row">
+      <div class="header">Thời gian</div>
+      <div class="header">Thứ 2</div>
+      <div class="header">Thứ 3</div>
+      <div class="header">Thứ 4</div>
+      <div class="header">Thứ 5</div>
+      <div class="header">Thứ 6</div>
+    </div>
+
+    <!-- Row 1 -->
+    <div class="schedule-row">
+      <div class="cell time-cell">7:30 - 9:00</div>
+      <div class="cell">Toán</div>
+      <div class="cell">Tin học</div>
+      <div class="cell">Văn</div>
+      <div class="cell">Toán</div>
+      <div class="cell">Lý</div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="schedule-row">
+      <div class="cell time-cell">9:15 - 10:45</div>
+      <div class="cell">Anh</div>
+      <div class="cell">Vật lý</div>
+      <div class="cell">Tin học</div>
+      <div class="cell">Hóa học</div>
+      <div class="cell">Toán</div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="schedule-row">
+      <div class="cell time-cell">11:00 - 12:30</div>
+      <div class="cell">Văn</div>
+      <div class="cell">Sinh học</div>
+      <div class="cell">Lịch sử</div>
+      <div class="cell">Địa lý</div>
+      <div class="cell">Công nghệ</div>
+    </div>
+  </div>
+</body>
+</html>
