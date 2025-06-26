@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: green;
+}
+
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.audio-card {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 15px;
+  background-color: yellow;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.audio-description h3 {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.audio-description p {
+  color: #555;
+  font-size: 1rem;
+}
+
+.audio-player audio {
+  width: 100%;
+  outline: none;
+}
+    </style>
+</head>
+<body>
+    <body>
+        <div class="container">
+          <div class="audio-card">
+            <div class="audio-description">
+              <h3>Taylor Swift - Enchanted</h3>
+              <p>Enchanted là một bài hát do ca sĩ kiêm nhạc sĩ người Mỹ Taylor Swift sáng tác và thu âm cho album phòng thu thứ ba của cô, Speak Now (2010). Được sản xuất bởi Swift và Nathan Chapman , bài hát là một bản ballad mạnh mẽ kết hợp giữa nhạc pop , rock và nhạc đồng quê . Bản sản xuất kết hợp tiếng guitar acoustic nhẹ nhàng và crescendo sau mỗi đoạn điệp khúc , dẫn đến tiếng guitar điện năng động , nhịp trống đều đặn và phần kết hợp giọng hát nhiều lớp.</p>
+            </div>
+            <div class="audio-player">
+              <audio controls>
+                <source src="sample.mp3" type="audio/mpeg">
+                Trình duyệt của bạn không hỗ trợ audio.
+              </audio>
+            </div>
+          </div>
+        </div>
+      </body>
+      
+</body>
+</html>
