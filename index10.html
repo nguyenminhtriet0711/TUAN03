@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 40px;
+  background: aquamarine;
+  color: #333;
+}
+
+.portfolio {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  transition: background 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card h3 {
+  margin: 16px 12px 8px;
+  font-size: 1.25em;
+}
+
+.card p {
+  margin: 0 12px 16px;
+  font-size: 0.95em;
+  color: #555;
+}
+
+.card:hover {
+  background: pink;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+    </style>
+</head>
+<body>
+    <body>
+  <section class="portfolio">
+    <h2>My project</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://intertour.vn/wp-content/uploads/2022/03/b3930fa7-8690-4d9f-a71f-53adabe9187e-1.jpg" alt="Dự án 1">
+        <h3>Dự án 1</h3>
+        <p>Ứng dụng web quản lý công việc cá nhân.</p>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/800x600_Wallpaper_Blue_Sky.png" alt="Dự án 2">
+        <h3>Dự án 2</h3>
+        <p>Trang blog cá nhân viết bằng HTML & CSS.</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn.wallpapersafari.com/48/66/H5MI2l.jpg" alt="Dự án 3">
+        <h3>Dự án 3</h3>
+        <p>Ứng dụng thời tiết dùng API thời gian thực.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</body>
+</html>
