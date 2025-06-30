@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fafafa;
+  padding: 40px;
+}
+
+.shop-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.shop-container h2 {
+  font-size: 2em;
+  color: #1a237e;
+  margin-bottom: 30px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-card img {
+  width: 100%;
+  max-width: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.product-card .price {
+  color: #e53935;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.product-card button {
+  padding: 10px 20px;
+  background: #1e88e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.product-card button:hover {
+  background: #1565c0;
+  transform: scale(1.05);
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+    </style>
+</head>
+<body>
+    <body>
+  <div class="shop-container">
+    <h2>Điện thoại nổi bật</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://cdn2.fptshop.com.vn/unsafe/360x0/filters:format(webp):quality(75)/iphone_13_b06d633f18.png" alt="iPhone 13">
+        <h3>iPhone 13</h3>
+        <p class="price">18.990.000₫</p>
+        <button>Mua ngay</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://cdn2.fptshop.com.vn/unsafe/360x0/filters:format(webp):quality(75)/samsung_galaxy_s23_591dfc2c85.png" alt="Samsung S23">
+        <h3>Samsung Galaxy S23</h3>
+        <p class="price">16.490.000₫</p>
+        <button>Mua ngay</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://cdn2.fptshop.com.vn/unsafe/360x0/filters:format(webp):quality(75)/2023_11_8_638350317315676088_xiaomi-13t-dd-bh-24-thang.jpg" alt="Xiaomi 13T">
+        <h3>Xiaomi 13T</h3>
+        <p class="price">10.990.000₫</p>
+        <button>Mua ngay</button>
+      </div>
+      
+    </div>
+  </div>
+</body>
+</body>
+</html>

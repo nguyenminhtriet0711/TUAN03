@@ -92,7 +92,6 @@ button:hover {
   transform: scale(1.03);
 }
 
-/* Responsive: Gộp 2 cột thành 1 cột khi màn hình nhỏ */
 @media (max-width: 768px) {
   .form-grid {
     grid-template-columns: 1fr;
@@ -106,7 +105,7 @@ button:hover {
     <form class="checkout-form">
       <h2>Thanh toán đơn hàng</h2>
       <div class="form-grid">
-        <!-- Cột trái: Người nhận -->
+
         <div class="form-column">
           <h3>Thông tin người nhận</h3>
           <label>Họ và tên:</label>
@@ -119,7 +118,6 @@ button:hover {
           <textarea rows="3" placeholder="Số nhà, đường, phường/xã, quận/huyện..." required></textarea>
         </div>
 
-        <!-- Cột phải: Thanh toán -->
         <div class="form-column">
           <h3>Thông tin thanh toán</h3>
           <label>Phương thức thanh toán:</label>
