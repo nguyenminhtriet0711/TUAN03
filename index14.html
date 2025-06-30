@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #e8f5e9;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.feedback-container {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feedback-form h2 {
+  text-align: center;
+  color: #2e7d32;
+}
+
+.form-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.feedback-form label {
+  font-weight: 500;
+  color: #33691e;
+  display: block;
+  margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #66bb6a;
+  outline: none;
+  box-shadow: 0 0 4px #a5d6a7;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  font-size: 1.8em;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.star-rating input:checked ~ label,
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: #ffca28;
+}
+
+button {
+  align-self: center;
+  padding: 12px 24px;
+  background: #66bb6a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #43a047;
+  transform: scale(1.03);
+}
+    </style>
+</head>
+<body>
+    <body>
+  <div class="feedback-container">
+    <form class="feedback-form">
+      <h2>Gửi phản hồi</h2>
+      <div class="form-grid">
+        <div>
+          <label>Họ và tên:</label>
+          <input type="text" placeholder="Nhập họ tên" required>
+        </div>
+
+        <div>
+          <label>Email:</label>
+          <input type="email" placeholder="Nhập email" required>
+        </div>
+
+        <div>
+          <label>Phản hồi:</label>
+          <textarea rows="4" placeholder="Nhận xét hoặc góp ý của bạn..."></textarea>
+        </div>
+
+        <div>
+          <label>Đánh giá dịch vụ:</label>
+          <div class="star-rating">
+            <input type="radio" name="rating" id="star5" value="5">
+            <label for="star5">★</label>
+            <input type="radio" name="rating" id="star4" value="4">
+            <label for="star4">★</label>
+            <input type="radio" name="rating" id="star3" value="3">
+            <label for="star3">★</label>
+            <input type="radio" name="rating" id="star2" value="2">
+            <label for="star2">★</label>
+            <input type="radio" name="rating" id="star1" value="1">
+            <label for="star1">★</label>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit">Gửi phản hồi</button>
+    </form>
+  </div>
+</body>
+</body>
+</html>
