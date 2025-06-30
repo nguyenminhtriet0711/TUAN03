@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f2f5;
+  padding: 40px;
+}
+
+.news-container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.news-container h2 {
+  font-size: 2em;
+  color: #1a237e;
+  margin-bottom: 30px;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.news-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  text-align: left;
+}
+
+.news-card:hover {
+  transform: translateY(-6px);
+}
+
+.news-image {
+  overflow: hidden;
+}
+
+.news-image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.news-card:hover .news-image img {
+  transform: scale(1.05);
+}
+
+.news-card h3 {
+  font-size: 1.2em;
+  margin: 16px 12px 8px;
+  color: #0d47a1;
+}
+
+.news-card p {
+  font-size: 0.95em;
+  color: #555;
+  margin: 0 12px 16px;
+  line-height: 1.5;
+}
+    </style>
+</head>
+<body>
+    <body>
+  <div class="news-container">
+    <h2>Tin tức mới nhất</h2>
+    <div class="news-grid">
+      <div class="news-card">
+        <div class="news-image">
+          <img src="https://cdn2.fptshop.com.vn/unsafe/360x0/filters:format(webp):quality(75)/iphone_16_f27848b783.png" alt="Tin tức 1">
+        </div>
+        <h3>iPhone 16 chính thức ra mắt</h3>
+        <p>Apple vừa trình làng iPhone 16 với thiết kế mới, camera nâng cấp và cổng USB-C.</p>
+      </div>
+
+      <div class="news-card">
+        <div class="news-image">
+          <img src="https://cdn2.fptshop.com.vn/unsafe/360x0/filters:format(webp):quality(75)/samsung_galaxy_z_flip6_thumb_3b90ddce0c.png" alt="Tin tức 2">
+        </div>
+        <h3>Samsung công bố Galaxy Z Flip6</h3>
+        <p>Mẫu điện thoại gập mới được nâng cấp mạnh về hiệu năng và camera AI.</p>
+      </div>
+
+      <div class="news-card">
+        <div class="news-image">
+          <img src="data:image/png;base64,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" alt="Tin tức 3">
+        </div>
+        <h3>Google nâng cấp tìm kiếm với AI</h3>
+        <p>Google Search giờ đây có thể trả lời trực tiếp các câu hỏi phức tạp nhờ trí tuệ nhân tạo.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</body>
+</html>
