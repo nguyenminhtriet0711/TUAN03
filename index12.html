@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: palegoldenrod;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.survey-container {
+  width: 100%;
+  max-width: 600px;
+  background: powderblue;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.survey-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.survey-form h2 {
+  margin-bottom: 10px;
+  text-align: center;
+  color: #333;
+}
+
+.survey-form label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.options-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-left: 10px;
+}
+
+.options-row label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: normal;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  font-size: 1em;
+  transition: border-color 0.3s;
+}
+
+textarea:focus {
+  border-color: #42a5f5;
+  outline: none;
+  box-shadow: 0 0 4px #90caf9;
+}
+
+button {
+  align-self: center;
+  padding: 12px 24px;
+  background: #42a5f5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: red;
+  transform: scale(1.03);
+}
+    </style>
+</head>
+<body>
+    <body>
+  <div class="survey-container">
+    <form class="survey-form">
+      <h2>Khảo sát ý kiến</h2>
+
+      <label>Bạn biết đến chúng tôi qua:</label>
+      <div class="options-row">
+        <label><input type="radio" name="source" value="facebook"> Facebook</label>
+        <label><input type="radio" name="source" value="google"> Google</label>
+        <label><input type="radio" name="source" value="friend"> Người quen</label>
+      </div>
+
+      <label>Bạn quan tâm đến:</label>
+      <div class="options-row">
+        <label><input type="checkbox" name="interest" value="web"> Thiết kế Web</label>
+        <label><input type="checkbox" name="interest" value="app"> Ứng dụng di động</label>
+        <label><input type="checkbox" name="interest" value="seo"> SEO & Marketing</label>
+      </div>
+
+      <label>Góp ý thêm:</label>
+      <textarea rows="4" placeholder="Nhập nội dung góp ý..."></textarea>
+
+      <button type="submit">Gửi khảo sát</button>
+    </form>
+  </div>
+</body>
+</body>
+</html>
