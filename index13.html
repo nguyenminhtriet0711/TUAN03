@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff8e1;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.booking-container {
+  width: 100%;
+  max-width: 700px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.booking-form h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #5d4037;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-left, .form-right {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.booking-form label {
+  font-weight: 500;
+  color: #4e342e;
+}
+
+.booking-form input,
+.booking-form textarea {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.booking-form input:focus,
+.booking-form textarea:focus {
+  border-color: #ffa726;
+  outline: none;
+  box-shadow: 0 0 4px #ffcc80;
+}
+
+textarea {
+  height: 100%;
+  min-height: 130px;
+  resize: vertical;
+}
+
+button {
+  align-self: center;
+  padding: 12px 24px;
+  background: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #fb8c00;
+  transform: scale(1.03);
+}
+    </style>
+</head>
+<body>
+    <body>
+  <div class="booking-container">
+    <form class="booking-form">
+      <h2>Đặt bàn</h2>
+      <div class="form-grid">
+        <!-- Cột trái -->
+        <div class="form-left">
+          <label>Ngày:</label>
+          <input type="date" required>
+
+          <label>Giờ:</label>
+          <input type="time" required>
+
+          <label>Số người:</label>
+          <input type="number" min="1" max="20" placeholder="Nhập số khách" required>
+        </div>
+
+        <!-- Cột phải -->
+        <div class="form-right">
+          <label>Yêu cầu đặc biệt:</label>
+          <textarea placeholder="Ví dụ: gần cửa sổ, sinh nhật, ăn chay..."></textarea>
+        </div>
+      </div>
+
+      <button type="submit">Xác nhận đặt bàn</button>
+    </form>
+  </div>
+</body>
+</body>
+</html>
